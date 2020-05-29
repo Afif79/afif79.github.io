@@ -6,6 +6,21 @@
 }
 
 /* phone only */
+header nav {
+  padding: 10px 20px;
+  background-color: #F1F3F4;
+  vertical-align: middle;
+}
+
+header nav span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+header nav img {
+  height: 24px;
+}
+
 /* tablet potrait up */
 /*tablet landscape up */
 /* desktop up */
