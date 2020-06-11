@@ -1,2 +1,34 @@
-$color1 : #5f6368;
-$bg-color: #F1F3F4;
+*, *::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+    --bg-odd: #fff;
+    --bg-even: #f1f3f4;
+    --main-color: #c1fc00;
+    --text-color: #232f34;
+    --lang-color: #A0AEC0;
+    --description-color: #4A5568;
+    --link-color: #232f34;
+    --text-color-fixed: #232f34;
+} 
+html[data-theme='dark'] {
+    --bg-odd: #000;
+    --bg-even: #232f34;
+    --main-color: #c1fc00;
+    --text-color: #fff;
+    --description-color: #A0AEC0;
+}  
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+img{
+    max-width: 100%;
+}
+
