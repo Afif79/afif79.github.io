@@ -138,9 +138,9 @@ h1{
             padding-left: 20px;
         }
 
-        li + li{
-            // margin-top: 15px;
-        }
+        // li + li{
+        //     // margin-top: 15px;
+        // }
 
         .navmenu ul li a{
             text-decoration: none;
@@ -227,7 +227,7 @@ h1{
             margin: 1.5rem auto;
             border-radius: .3rem;
             font-size: 0.8rem;
-
+            color: var(--link-color);
             .fas{
                 padding-left: .4rem;
             }

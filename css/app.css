@@ -278,6 +278,7 @@ h1 {
   margin: 1.5rem auto;
   border-radius: .3rem;
   font-size: 0.8rem;
+  color: var(--link-color);
 }
 
 #section4 .card a.button .fas {
