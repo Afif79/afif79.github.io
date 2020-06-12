@@ -389,6 +389,7 @@ footer{
     }
     .fa-sun{
         visibility: collapse;
+        display: none;
     }
 
 }
@@ -396,10 +397,12 @@ footer{
 .theme:hover{
     .fa-moon{
         visibility: collapse;
+        display: none;
     }
 
     .fa-sun{
         visibility: visible;
+        display: inline-block;
         color: var(--text-color-fixed);
     }
 }

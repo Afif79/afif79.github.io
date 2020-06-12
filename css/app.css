@@ -475,14 +475,17 @@ footer .fab:hover, footer .fa:hover {
 
 .theme .fa-sun {
   visibility: collapse;
+  display: none;
 }
 
 .theme:hover .fa-moon {
   visibility: collapse;
+  display: none;
 }
 
 .theme:hover .fa-sun {
   visibility: visible;
+  display: inline-block;
   color: var(--text-color-fixed);
 }
 
