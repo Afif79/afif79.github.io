@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 html{
@@ -30,10 +32,20 @@ html[data-theme='dark'] {
         content: url("../images/potrait4xcds.png");
     }
 }  
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
+  font-weight: 500;
   color: var(--text-color);
 }
 img{

@@ -3,6 +3,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -33,10 +35,21 @@ html[data-theme='dark'] .hero-image {
   content: url("../images/potrait4xcds.png");
 }
 
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  -webkit-transition: all 750ms !important;
+  transition: all 750ms !important;
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
+}
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
+  font-weight: 500;
   color: var(--text-color);
 }
 
@@ -164,6 +177,10 @@ h1 {
   padding: 40px 10px;
 }
 
+#section3 .container {
+  margin-top: 0;
+}
+
 #section3 .container .navmenu {
   position: absolute;
   -webkit-transform: translateY(5%);
@@ -217,7 +234,7 @@ h1 {
 }
 
 #section3 .container a#BE::before {
-  content: '2020';
+  content: '2021';
 }
 
 #section3 .container a#dip::before {
@@ -324,12 +341,14 @@ h1 {
   margin-right: 0.5rem;
 }
 
-#section4 .card img {
+#section4 .card .img {
   height: 1rem;
 }
 
-#section4 .card img:hover {
-  opacity: 0.5;
+#section4 .card .like:hover {
+  fill: var(--lang-color);
+  stroke: var(--text-color);
+  opacity: .5;
 }
 
 #section4 .card p.no {
@@ -444,7 +463,14 @@ footer .fab:hover, footer .fa:hover {
   font-size: 1rem;
 }
 
-.theme {
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: collapse;
+  display: none;
+}
+
+.lswitch {
   width: 40px;
   height: 40px;
   background-color: var(--main-color);
@@ -465,28 +491,14 @@ footer .fab:hover, footer .fa:hover {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  outline: none;
-  border: none;
 }
 
-.theme .fas {
+.lswitch .fas {
   color: var(--text-color-fixed);
 }
 
-.theme .fa-sun {
-  visibility: collapse;
-  display: none;
-}
-
-.theme:hover .fa-moon {
-  visibility: collapse;
-  display: none;
-}
-
-.theme:hover .fa-sun {
-  visibility: visible;
-  display: inline-block;
-  color: var(--text-color-fixed);
+.lswitch:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 1100px) {
@@ -539,7 +551,6 @@ footer .fab:hover, footer .fa:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 80px;
   }
   #section3 .container .navmenu ul::after {
     opacity: 0.3;

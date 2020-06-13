@@ -110,6 +110,9 @@ h1{
     .container{
         // display: flex;
         // justify-content: center;
+        // border: 2px solid red;
+        // position: relative;
+        margin-top: 0;
         .navmenu{
             position: absolute;
             transform: translateY(5%);
@@ -166,7 +169,7 @@ h1{
         }
 
         a#BE::before{
-            content: '2020';
+            content: '2021';
         }
         a#dip::before{
             content: '2018';
@@ -255,11 +258,13 @@ h1{
             opacity: 0.5;
             margin-right: 0.5rem;
         }
-        img{
+        .img{
             height: 1rem;
         }
-        img:hover{
-            opacity: 0.5;
+        .like:hover{
+            fill: var(--lang-color);
+            stroke: var(--text-color);
+            opacity: .5;
         }
         p.no{
             font-size: 1rem;
@@ -367,7 +372,15 @@ footer{
     padding: 0.5rem 40px;
     font-size: 1rem;
 }
-.theme{
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+    visibility: collapse;
+    display: none;
+}
+
+.lswitch{
     width: 40px;
     height: 40px;
     background-color: var(--main-color);
@@ -381,30 +394,30 @@ footer{
     position: fixed;
     right: 20px;
     bottom: 20px;
-    outline: none;
-    border: none;
+
 
     .fas{
         color: var(--text-color-fixed);
     }
-    .fa-sun{
-        visibility: collapse;
-        display: none;
-    }
+    // .fa-moon{
+    //     visibility: collapse;
+    //     display: none;
+    // }
 
 }
 
-.theme:hover{
-    .fa-moon{
-        visibility: collapse;
-        display: none;
-    }
+.lswitch:hover{
+    opacity: 0.5;
+    // .fa-moon{
+    //     visibility: collapse;
+    //     display: none;
+    // }
 
-    .fa-sun{
-        visibility: visible;
-        display: inline-block;
-        color: var(--text-color-fixed);
-    }
+    // .fa-sun{
+    //     visibility: visible;
+    //     display: inline-block;
+    //     color: var(--text-color-fixed);
+    // }
 }
 @media (min-width: 1100px)
 {
@@ -449,7 +462,7 @@ footer{
         .container{
             display: flex;
             justify-content: center;
-            margin-top: 80px;
+            //margin-top: 80px;
 
             .navmenu ul::after{
                 opacity: 0.3;
