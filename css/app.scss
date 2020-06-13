@@ -104,14 +104,9 @@ h1{
 }
 
 #section3{
-    // height: 150vh;
     background-color: var(--bg-odd);
     padding: 40px 10px;
     .container{
-        // display: flex;
-        // justify-content: center;
-        // border: 2px solid red;
-        // position: relative;
         margin-top: 0;
         .navmenu{
             position: absolute;
@@ -121,7 +116,6 @@ h1{
             list-style: none;
         }
         .navmenu ul{
-            //border: 2px solid red;
             // padding-left: 5%;
             position: relative;
             //width: 80vw;
@@ -143,10 +137,6 @@ h1{
             padding: 30px 0;
             padding-left: 20px;
         }
-
-        // li + li{
-        //     // margin-top: 15px;
-        // }
 
         .navmenu ul li a{
             text-decoration: none;
@@ -248,7 +238,6 @@ h1{
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            // border: 0.5px solid olivedrab;
         }
         .line{
             display: inline-block;
@@ -330,8 +319,6 @@ footer{
         opacity: .3;
     }
     .col2{
-
-        //padding-bottom: 0;
         a{
             display: block;
             margin: 1rem auto;
@@ -399,25 +386,11 @@ input[type=checkbox]{
     .fas{
         color: var(--text-color-fixed);
     }
-    // .fa-moon{
-    //     visibility: collapse;
-    //     display: none;
-    // }
 
 }
 
 .lswitch:hover{
     opacity: 0.5;
-    // .fa-moon{
-    //     visibility: collapse;
-    //     display: none;
-    // }
-
-    // .fa-sun{
-    //     visibility: visible;
-    //     display: inline-block;
-    //     color: var(--text-color-fixed);
-    // }
 }
 @media (min-width: 1100px)
 {
