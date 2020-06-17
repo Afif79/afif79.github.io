@@ -29,7 +29,7 @@
             <img class="hero-image"  alt="My Potrait Image">
             <div class="hello">
                 <h1 class="hello--there">Hello There!</h1>
-                <a href="#section2" class="hello--button">Let's Go</a>
+                <a href="#section2" class="hello--button">Let's Go&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></a>
             </div>
         </div>
     </section>
@@ -37,7 +37,9 @@
         <div class="container">
             <h1>MY BIO</h1>
             <img class="quotes" src="images/quotes.svg" alt="Quotes">
-            <p class="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab sequi asperiores laudantium a deleniti aliquid eligendi ratione nam delectus, quidem nostrum ipsa ex, repellendus facilis? Exercitationem adipisci in ab inventore sit beatae sed minima iusto? Error, fugit? Aut veritatis laborum debitis similique et iure reprehenderit nisi aperiam, ipsum, aliquam eveniet eum numquam obcaecati consequuntur  </p>
+            <p class="bio">
+                I am a <label id="myAge">20</label>-year-old IT Engineer and started pursuing Professional IT Education since 2018 but my passion for computers began from my school days(The early 2000s). The reason for that was My Mom was a computer teacher in an aided school and My dad was running a business called CareTech Computers basically, a computer buying consultant/ guide and computer repairer. My only playground was the computer desk and my only toy was my computer. I completed my SSC and got admitted into one of the best polytechnics in India i.e The Government Polytechnic of Mumbai to complete my diploma in Information Technology. And there started my interest in front end technologies specifically in UI/UX domain. 
+            </p>
             <img class="span-icon" src="images/Span.svg" alt="Span">
         </div>
     </section>
@@ -131,10 +133,12 @@
         </div>
     </section>
     <footer class="row">
-        <div class="col1">
-            <h3>Get in Touch</h3>
+        <div class="col1" style="text-align: left;">
+            <h3 style="text-align: center;">Get in Touch</h3>
+            <label for="email">Enter Your Email</label>
+            <input type="email" name="email" placeholder="Email">
             <label for="feedback">Give Your Valuable Feedback</label>
-            <textarea id="feedback" name="feedback" placeholder="Feedback" rows="4" cols="50"></textarea>
+            <textarea id="feedback" name="feedback" placeholder="Feedback" rows="3"></textarea>
             <button>Send</button>
         </div>
         <hr>

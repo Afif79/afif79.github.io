@@ -39,6 +39,14 @@ section{
     padding: 40px;
 }
 
+section:nth-of-type(odd)
+{
+    background-color: var(--bg-odd);
+}
+section:nth-of-type(even)
+{
+    background-color: var(--bg-even);
+}
 .container{
     width: 80%;
     max-width: 1100px;
@@ -51,7 +59,6 @@ h1{
 
 #section1{
     //height: 100vh;
-    background-color: var(--bg-odd);
     padding-top: 80px;
     //border: 2px solid red;
     text-align: center;
@@ -75,6 +82,7 @@ h1{
                 border-radius: 0.5rem;
                 margin-top: 50px;
                 color: var(--link-color);
+                font-weight: 600;
             }
             &--button:hover{
                 opacity: 0.6;
@@ -84,20 +92,25 @@ h1{
 }
 
 #section2{
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: flex-start;
     .container{
         text-align: center;     
         line-height: 2;
+        max-width: 900px;
         
-        .span-icon{
-            margin-top: 1rem;
-        }
+        
         h1, .quote{
-            margin : auto auto 1rem;
+            margin : auto auto 2rem;
         }
+
+        .span-icon{
+            margin-top: 2rem;
+        }
+
         .bio{
             margin: 2rem auto;
+            font-size: 1.2rem;
         }
 
     }
@@ -107,7 +120,7 @@ h1{
     background-color: var(--bg-odd);
     padding: 40px 10px;
     .container{
-        margin-top: 0;
+        margin-top: 2em;
         .navmenu{
             position: absolute;
             transform: translateY(5%);
@@ -184,11 +197,9 @@ h1{
     }
 
 }
-#section2,#section4{
-    background-color: var(--bg-even);
-}
 #section4{
     padding: 40px 20px;
+
     .container{
         width: 100%;
         margin: 0 auto;
@@ -280,7 +291,7 @@ footer{
         color: var(--text-color);
         margin: 2rem auto;
     }
-    textarea{
+    input, textarea{
         border: 1px solid var(--main-color);
         outline: none;
         border-radius: 0.3rem;
@@ -289,12 +300,13 @@ footer{
         resize: none;
         background-color: var(--bg-even);
         color: var(--text-color);
-        font-family: 'Open Sans', sans-serif;        font-size: small;
+        font-family: 'Open Sans', sans-serif;        
+        font-size: small;
         width: 380px;
         max-width: 100%;
         display: block;
     }
-    textarea:focus, textarea:hover ,textarea:active{
+    input:focus, input:hover, input:active, textarea:focus, textarea:hover ,textarea:active{
         border-color: var(--text-color);
     }
     button{
@@ -309,6 +321,7 @@ footer{
         font-size: 0.8rem;
         color: var(--link-color);
         font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
     }
     button:hover{
         opacity: 0.5;
@@ -381,7 +394,7 @@ input[type=checkbox]{
     position: fixed;
     right: 20px;
     bottom: 20px;
-
+    cursor: pointer;
 
     .fas{
         color: var(--text-color-fixed);
