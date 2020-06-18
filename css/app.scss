@@ -55,6 +55,8 @@ section:nth-of-type(even)
 
 h1{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 #section1{
@@ -71,18 +73,20 @@ h1{
             &--there{
                 font-size: 2.5rem;
                 margin-top: 50px;
+                font-family: 'Montserrat', sans-serif;
             }
 
             &--button{
                 display: inline-block;
                 text-decoration: none;
                 background-color: var(--main-color);
-                padding: .2rem 25%;
+                padding: .5rem 20%;
                 text-align: center;
                 border-radius: 0.5rem;
                 margin-top: 50px;
                 color: var(--link-color);
-                font-weight: 600;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
             }
             &--button:hover{
                 opacity: 0.6;
@@ -98,7 +102,6 @@ h1{
         text-align: center;     
         line-height: 2;
         max-width: 900px;
-        
         
         h1, .quote{
             margin : auto auto 2rem;
@@ -189,7 +192,7 @@ h1{
 
         .heading{
             font-size: 1.1rem;
-            font-weight: bolder;
+            font-weight: 600;
         }
         .subheading{
             font-size: 0.8rem;

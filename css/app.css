@@ -118,6 +118,8 @@ section:nth-of-type(even) {
 
 h1 {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 #section1 {
@@ -136,18 +138,20 @@ h1 {
 #section1 .container .hello--there {
   font-size: 2.5rem;
   margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #section1 .container .hello--button {
   display: inline-block;
   text-decoration: none;
   background-color: var(--main-color);
-  padding: .2rem 25%;
+  padding: .5rem 20%;
   text-align: center;
   border-radius: 0.5rem;
   margin-top: 50px;
   color: var(--link-color);
-  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 #section1 .container .hello--button:hover {
@@ -254,7 +258,7 @@ h1 {
 
 #section3 .container .heading {
   font-size: 1.1rem;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 #section3 .container .subheading {
