@@ -33,9 +33,11 @@ function getAge(dateString) {
     }
     return age;
   }
-console.log('age: ' + getAge("2000/01/08"));
+// console.log('age: ' + getAge("2000/01/08"));
 var y = getAge("2000/01/08");
 document.getElementById("myAge").innerHTML = y; 
+var today = new Date();
+document.getElementById("thisYear").innerHTML = today.getFullYear(); 
 
 
 function feedbackSent()
