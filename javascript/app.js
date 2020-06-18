@@ -36,3 +36,12 @@ function getAge(dateString) {
 console.log('age: ' + getAge("2000/01/08"));
 var y = getAge("2000/01/08");
 document.getElementById("myAge").innerHTML = y; 
+
+
+function feedbackSent()
+{
+    var elem = document.getElementById("button");
+    elem.value = "Sent!"; 
+    elem.style.color="red"
+    console.log(elem.value);
+}

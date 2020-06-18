@@ -394,7 +394,7 @@ footer input:focus, footer input:hover, footer input:active, footer textarea:foc
   border-color: var(--text-color);
 }
 
-footer button {
+footer .button {
   background-color: var(--main-color);
   width: 380px;
   max-width: 100%;
@@ -407,9 +407,21 @@ footer button {
   color: var(--link-color);
   font-family: 'Open Sans', sans-serif;
   cursor: pointer;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
-footer button:hover {
+footer input[type="submit"] {
+  outline: none;
+}
+
+footer input[type="submit"]::-moz-focus-inner {
+  border: 0;
+  outline: none;
+}
+
+footer .button:hover {
   opacity: 0.5;
 }
 
