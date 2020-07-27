@@ -94,6 +94,13 @@ h1{
         }
     }
 }
+.twitter_Section{
+    display: block;
+    .twitter-tweet{
+        margin: auto;
+        display: inline-block;
+    }
+}
 
 #section3{
     // display: flex;
@@ -280,7 +287,7 @@ h1{
 
 
 footer{
-    background-color: var(--bg-odd);
+    background-color: var(--bg-even);
     .col1, .col2, .col3{
         text-align: center;
         padding: 20px;
@@ -379,7 +386,7 @@ footer{
 }
 
 .copyright{
-    background-color: var(--bg-even);
+    background-color: var(--bg-odd);
     text-align: center;
     padding: 0.5rem 40px;
     font-size: 1rem;
@@ -438,7 +445,16 @@ input[type=checkbox]{
             }
         }
     }
-
+    .twitter_Section{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .twitter-tweet{
+            margin: auto;
+            display: inline-block;
+        }
+    }
+    
     footer{
         padding: 0 40px 40px;
         display: flex;
