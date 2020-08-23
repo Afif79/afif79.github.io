@@ -32,8 +32,10 @@ html[data-theme='dark'] {
         content: url("../images/potrait4xcds.png");
     }
 
-    .card{
-        background-color: var(--bg-even);
+    #section2{
+        .card{
+            background-color: var(--bg-even);
+        }
     }
 }  
 
