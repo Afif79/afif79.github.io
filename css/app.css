@@ -283,7 +283,7 @@ h1 {
 }
 
 #section2 .card {
-  background-color: var(--bg-odd);
+  background-color: var(--bg-even);
   padding: 20px 30px;
   margin-top: 2rem;
   border-radius: 1rem;
