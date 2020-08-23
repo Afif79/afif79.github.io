@@ -31,6 +31,10 @@ html[data-theme='dark'] {
     .hero-image{
         content: url("../images/potrait4xcds.png");
     }
+
+    .card{
+        background-color: var(--bg-even);
+    }
 }  
 
 html.transition,

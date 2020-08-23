@@ -35,6 +35,10 @@ html[data-theme='dark'] .hero-image {
   content: url("../images/potrait4xcds.png");
 }
 
+html[data-theme='dark'] .card {
+  background-color: var(--bg-even);
+}
+
 html.transition,
 html.transition *,
 html.transition *:before,
@@ -283,7 +287,7 @@ h1 {
 }
 
 #section2 .card {
-  background-color: var(--bg-even);
+  background-color: var(--bg-odd);
   padding: 20px 30px;
   margin-top: 2rem;
   border-radius: 1rem;
